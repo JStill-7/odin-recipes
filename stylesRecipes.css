@@ -1,0 +1,62 @@
+html {
+  --s: 92px; /* control the size*/
+  --c1: #c9ada7;
+  --c2: #968c98;
+  
+  --_g: #0000 83%,var(--c1) 85% 99%,#0000 101%;
+  background:
+    radial-gradient(27% 29% at right ,var(--_g)) calc(var(--s)/ 2) var(--s),
+    radial-gradient(27% 29% at left  ,var(--_g)) calc(var(--s)/-2) var(--s),
+    radial-gradient(29% 27% at top   ,var(--_g)) 0 calc(var(--s)/ 2),
+    radial-gradient(29% 27% at bottom,var(--_g)) 0 calc(var(--s)/-2)
+    var(--c2);
+  background-size: calc(2*var(--s)) calc(2*var(--s));
+}
+
+
+
+h1{
+  display: flex;
+  justify-content: center;
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 48px;
+  margin-left: 18px;
+}
+
+
+body {
+  margin: 40px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  border: 14px dotted rgb(34,34,59);
+  height: 100%;
+  background-color: rgb(154, 140, 152);
+  
+}
+
+p {
+  margin-left: 16px;
+  margin-right: 16px;
+  font-size: 26px;
+}
+
+li {
+  font-size: 24px;
+  margin-left: 22px;
+  margin-bottom: 14px;
+}
+#pictureContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+#pizzaPicture {
+  width: 800px;
+  height: auto;
+   }
+

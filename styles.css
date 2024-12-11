@@ -19,28 +19,26 @@ body {
     margin-top: 40px;
     display: flex;
     flex-direction: column;
-    /* border: 14px dotted rgb(201, 173, 167); */
+    border: 14px dotted rgb(34,34,59);
     height: 100vh;
-    /* background-color: rgb(154, 140, 152); */
 }
 
 h1 {
     display: flex;
     justify-content: center;
-    border: 1px solid green;
-    font-size: 64px;
+    font-size: 68px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 ul {
  
     border: 1px solid saddlebrown;
-  
+    height: 600px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items:center;
-  height: auto;
+    height: auto;
     font-size: x-large;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -50,40 +48,65 @@ li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 300px;
     font-size: 56px;
-    border: 2px solid blue;
+    
   }
 
 
 
  li a {
+  padding-top: 30px;
+  padding-bottom: 30px;
     text-decoration: none;
+   
   
  }
 
- #pictureContianer{
+#pictureContainer {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  border: 2px solid black;
+  
+  border: 2px solid orangered;
+}
+
+ #pizzaPicture {
+  width: 800px;
   height: auto;
  }
 
- #pizzaCartoon{
-  /* width: 420px;
-  height: auto; */
-  width: 100%;
-  height: 300px;
- }
 
- #hamburgerCartoon{
-  width: 100%;
-  height: 300px;
- }
+ /* MEDIA QUERYS */
+ @media (width <= 1300px) {
 
- #eggCartoon{
-  width: 100%;
-  height: 300px;
- }
+body {
+  border: 14px dotted rgb(34,34,59);
+}
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  li {
+
+    padding: 0;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    
+  }
+
+  
+
+  li img {
+    max-width: 100%; 
+    height: auto;
+    margin-top: 10px; 
+}
+
+
+}
